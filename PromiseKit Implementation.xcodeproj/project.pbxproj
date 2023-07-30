@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		687EB5F02A76605000F0C299 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EB5EF2A76605000F0C299 /* APIManager.swift */; };
+		687EB5F22A7662BE00F0C299 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EB5F12A7662BE00F0C299 /* APIEndpoints.swift */; };
 		68A03F5A2A75A1570007ECFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A03F592A75A1570007ECFE /* AppDelegate.swift */; };
 		68A03F5C2A75A1570007ECFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A03F5B2A75A1570007ECFE /* SceneDelegate.swift */; };
 		68A03F5E2A75A1570007ECFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A03F5D2A75A1570007ECFE /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		68A03F712A75A1580007ECFE /* PromiseKit_ImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A03F702A75A1580007ECFE /* PromiseKit_ImplementationTests.swift */; };
 		68A03F7B2A75A1580007ECFE /* PromiseKit_ImplementationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A03F7A2A75A1580007ECFE /* PromiseKit_ImplementationUITests.swift */; };
 		68A03F7D2A75A1580007ECFE /* PromiseKit_ImplementationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A03F7C2A75A1580007ECFE /* PromiseKit_ImplementationUITestsLaunchTests.swift */; };
+		68A03F8B2A75A3920007ECFE /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 68A03F8A2A75A3920007ECFE /* PromiseKit */; };
+		68A03F8F2A75A5640007ECFE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A03F8E2A75A5640007ECFE /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		687EB5EF2A76605000F0C299 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		687EB5F12A7662BE00F0C299 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		68A03F562A75A1570007ECFE /* PromiseKit Implementation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PromiseKit Implementation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A03F592A75A1570007ECFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68A03F5B2A75A1570007ECFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,7 @@
 		68A03F762A75A1580007ECFE /* PromiseKit ImplementationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PromiseKit ImplementationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A03F7A2A75A1580007ECFE /* PromiseKit_ImplementationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit_ImplementationUITests.swift; sourceTree = "<group>"; };
 		68A03F7C2A75A1580007ECFE /* PromiseKit_ImplementationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit_ImplementationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68A03F8E2A75A5640007ECFE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A03F8B2A75A3920007ECFE /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		687EB5EC2A765FC100F0C299 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				687EB5EF2A76605000F0C299 /* APIManager.swift */,
+				687EB5F12A7662BE00F0C299 /* APIEndpoints.swift */,
+				68A03F8E2A75A5640007ECFE /* Data.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		68A03F4D2A75A1570007ECFE = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +119,11 @@
 			children = (
 				68A03F592A75A1570007ECFE /* AppDelegate.swift */,
 				68A03F5B2A75A1570007ECFE /* SceneDelegate.swift */,
+				687EB5EC2A765FC100F0C299 /* Service */,
 				68A03F5D2A75A1570007ECFE /* ViewController.swift */,
 				68A03F5F2A75A1570007ECFE /* Main.storyboard */,
-				68A03F622A75A1580007ECFE /* Assets.xcassets */,
 				68A03F642A75A1580007ECFE /* LaunchScreen.storyboard */,
+				68A03F622A75A1580007ECFE /* Assets.xcassets */,
 				68A03F672A75A1580007ECFE /* Info.plist */,
 			);
 			path = "PromiseKit Implementation";
@@ -143,6 +162,9 @@
 			dependencies = (
 			);
 			name = "PromiseKit Implementation";
+			packageProductDependencies = (
+				68A03F8A2A75A3920007ECFE /* PromiseKit */,
+			);
 			productName = "PromiseKit Implementation";
 			productReference = 68A03F562A75A1570007ECFE /* PromiseKit Implementation.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 68A03F4D2A75A1570007ECFE;
+			packageReferences = (
+				68A03F892A75A3920007ECFE /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
 			productRefGroup = 68A03F572A75A1570007ECFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687EB5F02A76605000F0C299 /* APIManager.swift in Sources */,
+				68A03F8F2A75A5640007ECFE /* Data.swift in Sources */,
 				68A03F5E2A75A1570007ECFE /* ViewController.swift in Sources */,
+				687EB5F22A7662BE00F0C299 /* APIEndpoints.swift in Sources */,
 				68A03F5A2A75A1570007ECFE /* AppDelegate.swift in Sources */,
 				68A03F5C2A75A1570007ECFE /* SceneDelegate.swift in Sources */,
 			);
@@ -596,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68A03F892A75A3920007ECFE /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68A03F8A2A75A3920007ECFE /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68A03F892A75A3920007ECFE /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68A03F4E2A75A1570007ECFE /* Project object */;
 }
